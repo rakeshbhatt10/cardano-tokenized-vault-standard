@@ -1,0 +1,231 @@
+{
+  "schema": "CTVS-STAKING-ACTIVE-SOURCES-2",
+  "originalBuildId": "3df02869565300878e93bcf267e1ed09367388a0e094ff2268e8d58c2b36e4fa",
+  "activeSources": [
+    "packages/staking-ctvs1-vault/factory/onchain/aiken.lock",
+    "packages/staking-ctvs1-vault/factory/onchain/aiken.toml",
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/controller.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/genesis.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/types.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/validators/authenticated_factory.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/validators/config_lock.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory_vault.ak",
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory_vault_test.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/authorization.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/authorization_test.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/protocol.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/registration.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/registration_test.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/rewards.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/types.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/controller_action.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/controller_decode.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/mint_decode.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/mixed_state.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_core.ak",
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/types.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/decode.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/genesis.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/ledger.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/math.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/price.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/state_core.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/testing.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/validation.ak",
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/wire.ak"
+  ],
+  "excludedSources": {
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/deployment.ak": {
+      "sha256": "fca6a64c53307beb19b93069bd039a6bd1f52c21516be20ac1f2cac5c2141ad3",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/.authenticated_factory.ak.swp": {
+      "sha256": "6fbb194eda9f8ecff07532e8792bc9cb9fcfedaa266653d0d80aaebe1e5171b9",
+      "reason": "Noncompiler editor artifact; never included"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory.ak": {
+      "sha256": "59551ffb0bcc15d60d71d71df12499fcd1a5f1332562d2fa3b5c65936a0b95c2",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/identity_probe.ak": {
+      "sha256": "b515e5c3565f09d1a03fa342f2a278e55c4b448e436dc65c80d97e45e2a31fc6",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/protocol.ak": {
+      "sha256": "8bbab6dc94439a7826662dcfc200d30bf2222c041992a317a05bb778f04b0f46",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/rewards.ak": {
+      "sha256": "93b8339694818ca6509d1c2d6b4db424f1db70e6b62fc2a591a97e1a6c225bf0",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/rewards.test.ak": {
+      "sha256": "5bc0b8ce201f48bdc1a89626d20de35cb98917836db1647f38400879b9c6e0c5",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/types.ak": {
+      "sha256": "5f3f1ce572fceb5ce68f516ba2fced0c42f26445051567d36359d92a6c00f7cf",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/cash_state.ak": {
+      "sha256": "0c4278a8f9103df788a659eea8b0ec94f497b9dc4b4e855b85baa203cf1e4ded",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_decode.ak": {
+      "sha256": "0d801356e0b33ebab5b07289a9fb62ed8ce0d0881714d8d2328aee9a034cec92",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_decode_test.ak": {
+      "sha256": "ceeba6d986a490862b3256746f77aad0972b43d51a84110e8603e6f0a37da2a8",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_genesis.ak": {
+      "sha256": "5ad0b2639f5f004fac9f8050c31f8d9b329e12cd2b5167b06dae4301f6c528f7",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_state.ak": {
+      "sha256": "571dc8455bebb5048a96e4eff682dc2e71e3e1438b868ada5c64e33613ac9229",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    }
+  },
+  "validatorTitles": [
+    "authenticated_factory.authenticated_factory.else",
+    "authenticated_factory.authenticated_factory.mint",
+    "config_lock.config_lock.else",
+    "factory_vault.vault.else",
+    "factory_vault.vault.mint",
+    "factory_vault.vault.spend"
+  ],
+  "factoryChecks": 73,
+  "bindings": {
+    "packages/staking-ctvs1-vault/factory/onchain/aiken.lock": {
+      "currentPath": "onchain/factory/aiken.lock",
+      "sha256": "6ad38573bfc4d4987ef66afb832bc39e45dc1c262bff79fc8139ad804c5a8b92"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/aiken.toml": {
+      "currentPath": "onchain/factory/aiken.toml",
+      "sha256": "e8ebb9e0c506dfbbc3e865e3d825dc336735e34a4d9a5f498cb261bb0fc3fb9d"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/controller.ak": {
+      "currentPath": "onchain/factory/lib/factory/controller.ak",
+      "sha256": "f66ab17bcb5b3efc6a3fbb85dde017fba3ebde7465dd44fbdf2e0824eddb6660"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/genesis.ak": {
+      "currentPath": "onchain/factory/lib/factory/genesis.ak",
+      "sha256": "7a844badc0fab92d0abf1add32535d83c7e60610cfbfa4c13084ccc5cd7195ed"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/types.ak": {
+      "currentPath": "onchain/factory/lib/factory/types.ak",
+      "sha256": "76a2c2307e133d7c032417132356f7c9d44911464df086fbc34189581cac70f1"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/authenticated_factory.ak": {
+      "currentPath": "onchain/factory/validators/authenticated_factory.ak",
+      "sha256": "d3ffa270b8db1c45c5d8dc5070a134af5f713747e64c1c4e81fb99eb69dcf61f"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/config_lock.ak": {
+      "currentPath": "onchain/factory/validators/config_lock.ak",
+      "sha256": "9763142e78c379561cb9428ce99c7d9d35dab35e7f9282e19da57e9bc402ea2f"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory_vault.ak": {
+      "currentPath": "onchain/factory/validators/factory_vault.ak",
+      "sha256": "1eae01b74c21c6ced4c83d073a138ca5a82c8cc107d6a69feae1b4603a93f2d1"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory_vault_test.ak": {
+      "currentPath": "onchain/factory/validators/factory_vault_test.ak",
+      "sha256": "64b2b54b2becfa89edf60e2dc5366e114835b75c1d5a15010cd1f30b308a971a"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/authorization.ak": {
+      "currentPath": "onchain/vault/lib/staking/authorization.ak",
+      "sha256": "556460c87e15649a40e6f38c091d97fc94307836132b70535e48447097aa617d"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/authorization_test.ak": {
+      "currentPath": "onchain/vault/lib/staking/authorization_test.ak",
+      "sha256": "0f18b61d85bd5479857a80c0e41ea9fa1afdac2ac0375ea1afca41f54cfb4dc7"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/protocol.ak": {
+      "currentPath": "onchain/vault/lib/staking/protocol.ak",
+      "sha256": "793a1b317bdb1c0330d336658d70744286366fcaceeb2008214c345732388330"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/registration.ak": {
+      "currentPath": "onchain/vault/lib/staking/registration.ak",
+      "sha256": "dd2e971b99715cfbd63a12cfd886402b0ad53eb73d1220b9901d4d7d44fa7814"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/registration_test.ak": {
+      "currentPath": "onchain/vault/lib/staking/registration_test.ak",
+      "sha256": "28cfd8d20df8e66494c50e682c45b2c7cfe99f64a8ac0309428d22fe861eb48d"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/rewards.ak": {
+      "currentPath": "onchain/vault/lib/staking/rewards.ak",
+      "sha256": "93b8339694818ca6509d1c2d6b4db424f1db70e6b62fc2a591a97e1a6c225bf0"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/mixed_staking/types.ak": {
+      "currentPath": "onchain/vault/lib/staking/types.ak",
+      "sha256": "95232e5debae98a97bbc0cf0ce50940fcd020fefa6ea0de4a36473ab79515658"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/controller_action.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/controller_action.ak",
+      "sha256": "3967c799fa83b5d69034d01e5bf2db465659c607a3678e567ac9fd8241911be3"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/controller_decode.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/controller_decode.ak",
+      "sha256": "6cab4de4420242e17a255f87695040be5363790c56a6eaf9deb527875decd2a0"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/mint_decode.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/mint_decode.ak",
+      "sha256": "1418091ebac29d89871db420c6001d36bf17be06df773aeec2ddd9b702447421"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/mixed_state.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/staking_state.ak",
+      "sha256": "09186a9c9abf6ee87a359975421fd767505f57b2d4c3e94a9b750cfbd4d96ef7"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_core.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/staking_core.ak",
+      "sha256": "bb7e074b3af032ba1d920a1ceae075da80dca25c1bcd2fe70a018c92c06e95af"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/types.ak": {
+      "currentPath": "onchain/vault/lib/staking_ctvs1/types.ak",
+      "sha256": "7cbc513cd79afd524222b1fb60d40668b7d01e743d529eac567c9dd18697832f"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/decode.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/decode.ak",
+      "sha256": "57caf6a19b557a65c6e8b7be5b8b79dcd88fb4524f557a83d3207668ca49eede"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/genesis.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/genesis.ak",
+      "sha256": "1cad2c5abbdffdb819e8d7ec72df2fe9fbfc5cad77f653fb9547c103c11b1801"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/ledger.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/ledger.ak",
+      "sha256": "b76e1be019f8caaeebac15a5287b45ed466b97933f892d3c3e9919bb77c55153"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/math.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/math.ak",
+      "sha256": "fed634b21ed420f53913801e68ef1d72bac854c360a44d29ab78c5f510ecb530"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/price.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/price.ak",
+      "sha256": "2c2d46f68b1183fe95683402bb3343e686dec849b1766ef52f1c8ecabd7829aa"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/state_core.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/state_core.ak",
+      "sha256": "4c6e3ef319d6aec3d737ad201864514689ddd681be78e0acd5648e352c389361"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/testing.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/testing.ak",
+      "sha256": "1a7e7ba96f3ece4a2bdfaf071e5e79e93dfbf1e8bdb49cf34da77daf279f0ba3"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/validation.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/validation.ak",
+      "sha256": "d7b70e9b92e6b9d0d48833bb98213b9e813bfceee906ba241cf3948dcdf4033f"
+    },
+    "vendor/ctvs-reference/packages/onchain/lib/ctvs/wire.ak": {
+      "currentPath": "reference:packages/onchain/lib/ctvs/wire.ak",
+      "sha256": "52435da79131440c1f01d8a6e84d29fc09c3a93f0e943ac69a580f3065f8d804"
+    }
+  },
+  "renames": {
+    "mixed_staking": "staking",
+    "staking_ctvs1/mixed_state": "staking_ctvs1/staking_state"
+  },
+  "cleanup": "Unused prototype type declarations removed; current deployed data types and handler bytes preserved"
+}

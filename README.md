@@ -18,6 +18,11 @@ npm ci --ignore-scripts
 npm run check
 ```
 
+The isolated [staking vault example](reference/examples/staking-vault/README.md) includes
+the full staking contract, authenticated factory, staking-aware controller,
+public historical Preprod settings and complete unsigned local transaction flows. It is an
+example extension with separate source/build evidence and readiness limits.
+
 ## Repository organization
 
 | Directory | Purpose |

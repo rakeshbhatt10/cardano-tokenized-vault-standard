@@ -1,0 +1,661 @@
+{
+  "source": "cardano-workshop tested staking-ctvs1-vault",
+  "target": "isolated factory-admitted CTVS-1 staking example",
+  "files": {
+    "src/setup/import-factory-pool.ts": {
+      "originalSha256": "30c030fed6825a2547b665923ff8e7e40751f72b890cfd59a447de58ea6261ca",
+      "portedSha256": "331a8af136300df907800daa356d98716eca5825954e289044e18d5332943afd"
+    },
+    "src/setup/factory-pool.ts": {
+      "originalSha256": "f70b7d25973fe9aac14799db8bbcc7d0f7175cef324681500bac353cfe79f54c",
+      "portedSha256": "4cdb8141fe958d2b8cc011f5a718ae3df1574d03b5f2e58d3cd63c77924b12b8"
+    },
+    "src/setup/existing-pool-program.ts": {
+      "originalSha256": "1c10e11a44835635895f6b76089283352263a8b2e65c6ebebae47cd1e201c389",
+      "portedSha256": "98646164209b2f745c26016107a20c0979c8b138874d057a0f40ec010b9d2875"
+    },
+    "src/staking/datum.ts": {
+      "originalSha256": "450051e697c61d7328f8264e8167d6ff2f1f2e31ae35c7cf070cd3f2a65aa59c",
+      "portedSha256": "d25bc1afd41956fb9c1e26e5ffd8adfb3275a5fd95d1039bdc18137d2a684a89"
+    },
+    "src/staking/rewards.ts": {
+      "originalSha256": "e083c22b76da68f14eddc2ca0569ef455da4e68e6268f38b42c4d189ee399d47",
+      "portedSha256": "e083c22b76da68f14eddc2ca0569ef455da4e68e6268f38b42c4d189ee399d47"
+    },
+    "src/setup/settings.ts": {
+      "originalSha256": "61bbbf1e5fff24877b4a044e74e3738049c3b9beac23bfb633108640954e497c",
+      "portedSha256": "c9d970799443d7ab355e8384db791f2629a2649890c70b1da9df4cbe06942482"
+    },
+    "protocol/shared-v1/authorization.ts": {
+      "originalSha256": "7e2ecdc353019f9e958e44b2f8d84f946888e5bf6b4e0bb39b714424e98b4bec",
+      "portedSha256": "7e2ecdc353019f9e958e44b2f8d84f946888e5bf6b4e0bb39b714424e98b4bec"
+    },
+    "src/factory/proof.ts": {
+      "originalSha256": "59d9fb34bdf37d2b1db2cded40e73a43169729f8556547dd5d151a8ac5c96008",
+      "portedSha256": "9221e65264bc0fca2610faf9056ae045d545757733b8017eba4ee0de3a5c6b52"
+    },
+    "src/factory/proof/hashing.ts": {
+      "originalSha256": "b08465a85d8eaad986ee522df86697d74b3e06b9d8e0fa3eac9eccb4fc3ecc7f",
+      "portedSha256": "b08465a85d8eaad986ee522df86697d74b3e06b9d8e0fa3eac9eccb4fc3ecc7f"
+    },
+    "src/factory/proof/scripts.ts": {
+      "originalSha256": "b1f2f749a056b4877e75cea42d1e54b825d9571dd570e9af70b0c921c282a9b5",
+      "portedSha256": "12cf944dcc13577f86ac643c33c110eceab2583632083467ef3e1c788e4d1937"
+    },
+    "src/factory/proof/build.ts": {
+      "originalSha256": "75329a77a7a3e34598c8efb9396282e21c02c5688d369a57b2d72a17dab655ef",
+      "portedSha256": "add0dc8508596d3acb521b9c2d96fb88e34569e6f0952ec0e7343977addea567"
+    },
+    "src/setup/composed-settings.ts": {
+      "originalSha256": "09df0b58a787830fac15a63aeefb6dd09461b2c8a50b7bd2de90813ac40d968b",
+      "portedSha256": "bb5a80934c6388ba5ffb9babef8f9d48a2566dca4df866f51c56228f1cfb6250"
+    },
+    "src/factory/deployment.ts": {
+      "originalSha256": "53441c68f990da75a85e624e66f659f0267b3e698b7a5ed3f22afdc643f14741",
+      "portedSha256": "ef51c3cc6a1ef9746f834c5cb8077f2e22c4e73285728ebf9cb6d22e128d8958"
+    },
+    "src/factory/vault.ts": {
+      "originalSha256": "ab2a736ba52e9bdeb7f86ca115384f639f1e4db79aaeca259687286c447cbc08",
+      "portedSha256": "3fd11ea9c5f67fa1aebb61c89f2410848bcea7fd0c25b222e7fe51486e4f8849"
+    },
+    "src/setup/vault.ts": {
+      "originalSha256": "f06c8161b03ca25a0ad09f4b12c9539433bc6034b5e974a7a7bdaa3a6ed38ea2",
+      "portedSha256": "558b5966c069b93104f4305c26bbfb2fe05b76708082c658b6de6b0e6fb21117"
+    },
+    "src/planning/operation.ts": {
+      "originalSha256": "2d75f12cba319d959829d254d2f58491956bd0353a5181489c86480b0d5d37e8",
+      "portedSha256": "34787653564cb1033021822455431c2cab3a8918d3805a2097f10689ca72baa5"
+    },
+    "src/planning/model.ts": {
+      "originalSha256": "42b26068ac902208f445e33218b4324ded6a07264aec0e093593782ddcb4c9f0",
+      "portedSha256": "db4862d92fb46b0a432ca7aa31a52a8ba8b19d230fde9a1b109a2584bb050f5e"
+    },
+    "src/planning/factory-genesis.ts": {
+      "originalSha256": "be3e3ce59ff34b3329e72e3b4d9be033e87bf41da78544e42277c85519ee6c23",
+      "portedSha256": "be3e3ce59ff34b3329e72e3b4d9be033e87bf41da78544e42277c85519ee6c23"
+    },
+    "protocol/shared-v1/registration.ts": {
+      "originalSha256": "73d3e10a204693e13b90f77d975855dc860a083e271dc678d7032d64e89d3e6d",
+      "portedSha256": "73d3e10a204693e13b90f77d975855dc860a083e271dc678d7032d64e89d3e6d"
+    },
+    "src/staking/authorization.ts": {
+      "originalSha256": "2db9cae5ae93978e5a89fd9e08247d72cb5e91a94ac5bcd1282648071a40f244",
+      "portedSha256": "2db9cae5ae93978e5a89fd9e08247d72cb5e91a94ac5bcd1282648071a40f244"
+    },
+    "src/factory/existing-deposit.ts": {
+      "originalSha256": "855f4363758693913b16a60902cdca49367fa0b6848c646a5b3046d4f191e240",
+      "portedSha256": "855f4363758693913b16a60902cdca49367fa0b6848c646a5b3046d4f191e240"
+    },
+    "src/factory/position-operation.ts": {
+      "originalSha256": "9e336d23d588a12037a891e9e65aa3b44bff1dc1be0df43787df4626eaaad7c4",
+      "portedSha256": "f96cdebbdb150211f73d4f90763051c57e477c417147f3d0390b2e90cc3a1ffe"
+    },
+    "src/factory/operation-completion.ts": {
+      "originalSha256": "a787bc563e300040e5a9717f0360e4884bb7fa6a622d46b630f775ff16014d2b",
+      "portedSha256": "2e7ef5cdb716095b6b127a4fa9516915513f838e8f618de9c5026915b4748fc2"
+    },
+    "src/factory/operation-readback.ts": {
+      "originalSha256": "93591a77a68cace39c62cb06247e94f068bebfdd8717bfa13a0883d143756fe5",
+      "portedSha256": "93591a77a68cace39c62cb06247e94f068bebfdd8717bfa13a0883d143756fe5"
+    },
+    "src/ledger/effects/effects.ts": {
+      "originalSha256": "28e86cda940fa36bb4948bc579419fe3c0b310d0c35e262255eb68d9956a3703",
+      "portedSha256": "ebbae8722d8453d869a2d5e32ef5f39e98546d2e71176566eb3ab6dc03cad0e1"
+    },
+    "src/ledger/effects/effects-types.ts": {
+      "originalSha256": "b813543beff97848176aa6a9d51cf18fa8f17a6bfc81511894d0444c2d89350a",
+      "portedSha256": "b813543beff97848176aa6a9d51cf18fa8f17a6bfc81511894d0444c2d89350a"
+    },
+    "src/ledger/effects/ledger.ts": {
+      "originalSha256": "3c933e4a6e029d29bf27e1134f7b6eabd8ac71b635c89d23a0dfd7e31f8d7a90",
+      "portedSha256": "3c933e4a6e029d29bf27e1134f7b6eabd8ac71b635c89d23a0dfd7e31f8d7a90"
+    },
+    "src/ledger/effects/effects-witnesses.ts": {
+      "originalSha256": "2ea26c1e520c9cc2eb1302bf321b3c09c43a2aa02ef7f5236620da09be5a57e3",
+      "portedSha256": "86959e22c921738cc9dd6d85347a3c3dd9622b542ee3fc76490d39bf835c156c"
+    },
+    "src/ledger/effects/effects-ledger.ts": {
+      "originalSha256": "ca65c3f71bffccb2764c4e633c5cb365592103e95c534a486b6235bd395b6710",
+      "portedSha256": "42401e66c0ac7885a59b63dafe5abeabe85415394e294ae4b8657def66526f6d"
+    },
+    "src/unsigned.ts": {
+      "originalSha256": "2fff827fdd65e3e83220f63bf16dc565de49578bbb80fce0847a55d3b84df68d",
+      "portedSha256": "5bad4e276929c565cd40e883fba6bc7699fe780f44efaa2e945fb31195584446"
+    },
+    "src/ledger/builder.ts": {
+      "originalSha256": "6902821ca65bb4fd2c5fd75f3abda93a850b9bacb7ea48bdbdc7a3137b646dbe",
+      "portedSha256": "6902821ca65bb4fd2c5fd75f3abda93a850b9bacb7ea48bdbdc7a3137b646dbe"
+    },
+    "src/factory/withdraw.ts": {
+      "originalSha256": "3159293afa9dbcac126b4657b881922afea729cf8dad99e763d84dd96b3aeaa7",
+      "portedSha256": "3159293afa9dbcac126b4657b881922afea729cf8dad99e763d84dd96b3aeaa7"
+    },
+    "src/factory/redeem.ts": {
+      "originalSha256": "30b2a32e76e2423589f183586c5ae17084d63c756ac2ab27e6f6986900ffefb0",
+      "portedSha256": "30b2a32e76e2423589f183586c5ae17084d63c756ac2ab27e6f6986900ffefb0"
+    },
+    "src/factory/first-deposit.ts": {
+      "originalSha256": "4d2dacbb63280d1441ef833ecaf1f51c2ccc499d21ca61bf303f375e1af16734",
+      "portedSha256": "4d2dacbb63280d1441ef833ecaf1f51c2ccc499d21ca61bf303f375e1af16734"
+    },
+    "src/factory/admission.ts": {
+      "originalSha256": "d57989a5e310077978a047875f718169ea658f736cf13ae336f20d233131b053",
+      "portedSha256": "d57989a5e310077978a047875f718169ea658f736cf13ae336f20d233131b053"
+    },
+    "src/factory/publication.ts": {
+      "originalSha256": "e63a91dbd53adcfcbd905588fec4b6a7cdbb1d045475b95b75ef02536276d96a",
+      "portedSha256": "4ddde377ce10e9f615948504efad6291b3e338f03f86fe64753cd760ea1fe7b4"
+    },
+    "src/factory/creation.ts": {
+      "originalSha256": "5b3d391fae98226d5f074947e8e1c1adb583bf0425379343617e39feb0224f16",
+      "portedSha256": "1eedbc8cf42ec3c5ae777ee52dfef0b54399e6236901bbcb090291244b7157b7"
+    },
+    "src/factory/genesis-builder.ts": {
+      "originalSha256": "6dff6caf503d376e3811d0b0427fa5cf112e385e695031de177d5e98b5caf444",
+      "portedSha256": "6dff6caf503d376e3811d0b0427fa5cf112e385e695031de177d5e98b5caf444"
+    },
+    "src/factory/genesis-plan.ts": {
+      "originalSha256": "297a31f68d02ed808a92f5209e9a56912196070d411017bb5bc21cbcb42e5f35",
+      "portedSha256": "5b82a915d8bc0194613d8ac0f68a33bfafe1bdcd0b2e797e0dee89bb2b1cc5df"
+    },
+    "src/staking/position.ts": {
+      "originalSha256": "56c079e26decfc1dba9a6112f962e83391271c1ea4194a2e52e56f2478d4a938",
+      "portedSha256": "a95273a98c8c1a8fd1087e759a46d8cf5228a335b3f106e85e0909de0380431b",
+      "originalPath": "src/staking/mixed-datum.ts"
+    }
+  },
+  "changes": [
+    "relative import relocation",
+    "factory-only setup type/schema surface",
+    "public JSON serializer without legacy deployment exports",
+    "mixed-owner-v1 snapshot default",
+    "Explicit original source-prefix relocation with original build attestation retained",
+    "Historical noncompiler editor swap omitted from source exports",
+    "Example-local historical UPLC parameter encoder for exact deployed policy reproduction",
+    "Existing-position exact-share mint added with principal-input and reward bounds",
+    "Original synthetic nonempty-pool regression fixture relocated",
+    "Removed unused legacy onchain helpers, identity-only prototype API, interim build selection and dedicated-pool planning/decoding",
+    "Rename current staking adapter/state/position modules and local routing labels; preserve deployed ABI identifiers",
+    "Rename and relocate staking authorization/interface docs; archive dated status; bind current docs and original import snapshot",
+    "Remove obsolete standalone staking import status and its current references/bindings",
+    "Audit cleanup: remove unreachable modules, duplicated Aiken client copies, unused Deno tree and test-token validator; consolidate baseline artifacts under evidence"
+  ],
+  "vendorSha256": {
+    "protocol/shared-v1/authorization.ts": "7e2ecdc353019f9e958e44b2f8d84f946888e5bf6b4e0bb39b714424e98b4bec",
+    "protocol/shared-v1/registration.ts": "73d3e10a204693e13b90f77d975855dc860a083e271dc678d7032d64e89d3e6d",
+    "protocol/shared-v1/vectors.json": "f7a841d3156dd97379f38919208f25aeca5e578c161054bf74d4a72e5d603d77",
+    "src/factory/admission.ts": "d57989a5e310077978a047875f718169ea658f736cf13ae336f20d233131b053",
+    "src/factory/creation.ts": "1eedbc8cf42ec3c5ae777ee52dfef0b54399e6236901bbcb090291244b7157b7",
+    "src/factory/deployment.ts": "ef51c3cc6a1ef9746f834c5cb8077f2e22c4e73285728ebf9cb6d22e128d8958",
+    "src/factory/existing-deposit.ts": "855f4363758693913b16a60902cdca49367fa0b6848c646a5b3046d4f191e240",
+    "src/factory/first-deposit.ts": "4d2dacbb63280d1441ef833ecaf1f51c2ccc499d21ca61bf303f375e1af16734",
+    "src/factory/genesis-builder.ts": "6dff6caf503d376e3811d0b0427fa5cf112e385e695031de177d5e98b5caf444",
+    "src/factory/genesis-plan.ts": "5b82a915d8bc0194613d8ac0f68a33bfafe1bdcd0b2e797e0dee89bb2b1cc5df",
+    "src/factory/operation-completion.ts": "2e7ef5cdb716095b6b127a4fa9516915513f838e8f618de9c5026915b4748fc2",
+    "src/factory/operation-readback.ts": "93591a77a68cace39c62cb06247e94f068bebfdd8717bfa13a0883d143756fe5",
+    "src/factory/position-operation.ts": "f96cdebbdb150211f73d4f90763051c57e477c417147f3d0390b2e90cc3a1ffe",
+    "src/factory/proof/build.ts": "add0dc8508596d3acb521b9c2d96fb88e34569e6f0952ec0e7343977addea567",
+    "src/factory/proof/hashing.ts": "b08465a85d8eaad986ee522df86697d74b3e06b9d8e0fa3eac9eccb4fc3ecc7f",
+    "src/factory/proof/scripts.ts": "12cf944dcc13577f86ac643c33c110eceab2583632083467ef3e1c788e4d1937",
+    "src/factory/proof.ts": "9221e65264bc0fca2610faf9056ae045d545757733b8017eba4ee0de3a5c6b52",
+    "src/factory/publication.ts": "4ddde377ce10e9f615948504efad6291b3e338f03f86fe64753cd760ea1fe7b4",
+    "src/factory/redeem.ts": "30b2a32e76e2423589f183586c5ae17084d63c756ac2ab27e6f6986900ffefb0",
+    "src/factory/vault.ts": "3fd11ea9c5f67fa1aebb61c89f2410848bcea7fd0c25b222e7fe51486e4f8849",
+    "src/factory/withdraw.ts": "3159293afa9dbcac126b4657b881922afea729cf8dad99e763d84dd96b3aeaa7",
+    "src/ledger/builder.ts": "6902821ca65bb4fd2c5fd75f3abda93a850b9bacb7ea48bdbdc7a3137b646dbe",
+    "src/ledger/effects/effects-ledger.ts": "42401e66c0ac7885a59b63dafe5abeabe85415394e294ae4b8657def66526f6d",
+    "src/ledger/effects/effects-types.ts": "b813543beff97848176aa6a9d51cf18fa8f17a6bfc81511894d0444c2d89350a",
+    "src/ledger/effects/effects-witnesses.ts": "86959e22c921738cc9dd6d85347a3c3dd9622b542ee3fc76490d39bf835c156c",
+    "src/ledger/effects/effects.ts": "ebbae8722d8453d869a2d5e32ef5f39e98546d2e71176566eb3ab6dc03cad0e1",
+    "src/ledger/effects/ledger.ts": "3c933e4a6e029d29bf27e1134f7b6eabd8ac71b635c89d23a0dfd7e31f8d7a90",
+    "src/planning/factory-genesis.ts": "be3e3ce59ff34b3329e72e3b4d9be033e87bf41da78544e42277c85519ee6c23",
+    "src/planning/model.ts": "db4862d92fb46b0a432ca7aa31a52a8ba8b19d230fde9a1b109a2584bb050f5e",
+    "src/planning/operation.ts": "34787653564cb1033021822455431c2cab3a8918d3805a2097f10689ca72baa5",
+    "src/setup/composed-settings.ts": "bb5a80934c6388ba5ffb9babef8f9d48a2566dca4df866f51c56228f1cfb6250",
+    "src/setup/existing-pool-program.ts": "98646164209b2f745c26016107a20c0979c8b138874d057a0f40ec010b9d2875",
+    "src/setup/factory-pool.ts": "4cdb8141fe958d2b8cc011f5a718ae3df1574d03b5f2e58d3cd63c77924b12b8",
+    "src/setup/import-factory-pool.ts": "331a8af136300df907800daa356d98716eca5825954e289044e18d5332943afd",
+    "src/setup/settings.ts": "c9d970799443d7ab355e8384db791f2629a2649890c70b1da9df4cbe06942482",
+    "src/setup/vault.ts": "558b5966c069b93104f4305c26bbfb2fe05b76708082c658b6de6b0e6fb21117",
+    "src/staking/authorization.ts": "2db9cae5ae93978e5a89fd9e08247d72cb5e91a94ac5bcd1282648071a40f244",
+    "src/staking/datum.ts": "d25bc1afd41956fb9c1e26e5ffd8adfb3275a5fd95d1039bdc18137d2a684a89",
+    "src/staking/position.ts": "a95273a98c8c1a8fd1087e759a46d8cf5228a335b3f106e85e0909de0380431b",
+    "src/staking/rewards.ts": "e083c22b76da68f14eddc2ca0569ef455da4e68e6268f38b42c4d189ee399d47",
+    "src/unsigned.ts": "5bad4e276929c565cd40e883fba6bc7699fe780f44efaa2e945fb31195584446",
+    "support/application.ts": "6e62f809510cd590d929b80f3bfff344a4ce214c241cf9912a1b91e614b2250f",
+    "support/evaluation.ts": "f1493538aa1f4b6684135b667e33c6b91542334e7328525acc870c36b0a003ec",
+    "test/nonempty-pool.test.ts": "41d8920f25e0d25bad3cbe29fffddb036fadb4fc46a2e10d3bb7f2d52f921d36"
+  },
+  "removedFiles": {
+    "src/factory/proof/identity.ts": {
+      "originalSha256": "b0ebbbc4de90b3ab036580a5c00b8865fd865d6132958e7a6c679e2cf9c61b31",
+      "portedSha256": "761a05b916911490d172b7854da1ebdc592983f2a545d5ec56e3fc538eb21663",
+      "reason": "Unused identity-only prototype removed from current client"
+    },
+    "protocol/shared-v1/contract.json": {
+      "portedSha256": "20636675e8d6be5b913baedda68a8d09d410931d77afe79f1885331c8937a640",
+      "reason": "Consolidated into canonical docs/STAKING-INTERFACE.json; original interface remains in delivery evidence"
+    },
+    "src/factory/publication-artifacts.ts": {
+      "sha256": "92188301d1613141169ac9c11f1d6d00c5e7b452f498d99579788994b2e0455a",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "src/owner/setup/artifacts.ts": {
+      "sha256": "d214382758ca75effb6f14ad2daf1df461c241048384ca41839d6aca10a1e364",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "evidence/factory/relocation.json": {
+      "sha256": "3d9ac04b4a5f062a579845fc9c94d627431f8c67c1dfb99dad03cdefa479b8dd",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "protocol/shared-v1/registration_test.ak": {
+      "sha256": "28cfd8d20df8e66494c50e682c45b2c7cfe99f64a8ac0309428d22fe861eb48d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "protocol/shared-v1/registration.ak": {
+      "sha256": "dd2e971b99715cfbd63a12cfd886402b0ad53eb73d1220b9901d4d7d44fa7814",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "protocol/shared-v1/authorization_test.ak": {
+      "sha256": "0f18b61d85bd5479857a80c0e41ea9fa1afdac2ac0375ea1afca41f54cfb4dc7",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "protocol/shared-v1/authorization.ak": {
+      "sha256": "556460c87e15649a40e6f38c091d97fc94307836132b70535e48447097aa617d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/README.md": {
+      "sha256": "87fd53b9349ff4eddbd59c27e6da8c7f3c498cb042788552f397304a1ea5ec90",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/wallet.ts": {
+      "sha256": "265307b6300fce131a3fca712f0251f7dacf9db358f311edc1343a01868d891b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/deploy-single-staking.ts": {
+      "sha256": "e5fbf9e0eae5d6557415c153dfe4d67934cc197bc3fb2cce33c096fcc1934b3d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/notify-rewards.ts": {
+      "sha256": "4bd416562ca641f187b68f8994faaa654a6465a244ff250290cebbecfab01740",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/mod.ts": {
+      "sha256": "ad76cfca4a2f1dc91c5adcf86eb135b6218913d27e209a59e80c2a2bea855bec",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/fund-rewards.test.ts": {
+      "sha256": "e30e09d7e51795bf5f1393b1c9d788c0106e08762bdeadac91d821aa3fb7f4d0",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/generate-wallet.ts": {
+      "sha256": "eb2fd4c44097d4433e541d96b0c7641cf176f410218c8911a28594ef13ce426f",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/toggle-withdraw-lock.ts": {
+      "sha256": "721002fd7c540b302b3fe90c33a8b57df3fa950ac909a0dee39f186aa755284e",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/list-pools.ts": {
+      "sha256": "f78764c0cb8ad63df5b0c0e1697a8b4138beed9759dee92a69d562dc1846426e",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/toggle-pause.ts": {
+      "sha256": "3f0f612799eab48401bfef6aed6e8ffe6e310d21ee106c48c00c8d48d937ae02",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/toggle-withdraw-lock.test.ts": {
+      "sha256": "b8d9e2ff5bc81c207d967782b382fd319c29d61ad41358e76d979bdb801e8172",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/toggle-pause.test.ts": {
+      "sha256": "aea4b7cf9b41efbf99df3bda9e19fbe4b22f73ca201b8de78324c37aeb165cd7",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/recover-surplus.ts": {
+      "sha256": "52c7f040f38311308929519b78954e0267889c4785489a8570bd09e5e852d8e0",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/initialize-pool.ts": {
+      "sha256": "c46aa9db18e44b103046b6f8dec41bfd5cb65988ace7a33faba46dab4705a592",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/recover-surplus.test.ts": {
+      "sha256": "1a21725ee1f8ec30f37aaca5ea0e2573f5000a85df44f1b362634d55447c8aa1",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/fund-rewards.ts": {
+      "sha256": "6741f55fe5534115e837b9edbef12fedd075f91abae54b4c3456a5668df9729b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/wallet.ts": {
+      "sha256": "b291e31762ebe52ad0b95d4c72697f98a6b11c1c167b1cbc8b5a52d5bddc14ab",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/state.ts": {
+      "sha256": "1df837fa33e445505f8d30200bc2c7f2c12eb1fe982620af78bec2feb06c4aec",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/generate-staker.ts": {
+      "sha256": "6e6840f429d345040ba4c2fa7fc3dc6302caa0676148bc12b8e03879dc19b2c1",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/mod.ts": {
+      "sha256": "cb6d20d7988e4309986ab60bd4eb418f8285af5678bc5958451838c48c97d09f",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/position-closure.test.ts": {
+      "sha256": "aafa43c374fd7bde39437ba931bb9c6227a9d599545465051c53e4c32a678b78",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/stake-all.ts": {
+      "sha256": "e295e865878c159c30ae4b33cc56de0d64ed8beb1e2b460e27ef86b6f36d0678",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/claim-all.ts": {
+      "sha256": "cf642ab80ceed7830e9a87463cbd59c5fff93df0e924b2683f3e1b5efc06dabc",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/close-empty-position.ts": {
+      "sha256": "f6462347c43ae3d9569195213f21a0c3a406b80927d3c18bdc87289673125d93",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/exit-all.ts": {
+      "sha256": "71c88ae89823d1bf8097f5903e42a3e16de16bbc2ed778f4650417e2c02176c3",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/unstake-all.ts": {
+      "sha256": "483b04cec40ccd0b02be6e529afdb076911d1ea2ed8b8f89a437663d59812362",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/mod.ts": {
+      "sha256": "00e141573fc09e7b436783e804bd28401a69ab4dbb5a1dc1013eb2b5e4c4f7da",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/pool-registry.ts": {
+      "sha256": "d053ab79da03b0ae3b286573cc8cc66648e7b1c4ba11af80a8637370c041c7f5",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/staking-transaction.ts": {
+      "sha256": "5ac6ee3b6300a6c0c663db1430413f66f0c5b114860009d41555cdf3b7e1d524",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/scripts.ts": {
+      "sha256": "dea263e93f419240c761b77bc1baa0d3ae90d29ae6920c8e623ecdc666f25dc2",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/schedule.ts": {
+      "sha256": "fb6e9acd591cb3aacebd16aded9ef62f030aa2705d8f73e0533e79534f1b6c38",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/rewards.ts": {
+      "sha256": "e50e77bba57a1898f6f5d8a8153e70e2468818dd88a6dc7ef1a0c7e758df7ec1",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/registration-wire.ts": {
+      "sha256": "96caedf5706cd972b2cf0f6c15e6811d4a4f7012b3e09e8650b0d49481741673",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/scripts.test.ts": {
+      "sha256": "b3ad63b629aff7ef18f1b8617fd0517ce21ee31d2526d70ce004a8828c9a268e",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/pool-deployment.ts": {
+      "sha256": "25b4405b2c07bc3c4596e77849b97b8a46f1bc8f8eb480a52aa92ba0ac091b7e",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/authorization.ts": {
+      "sha256": "b0894742c9d95b2967c48a9da9400fd0e95acdf83dbdb27727c64dbad3ebce22",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/types.ts": {
+      "sha256": "50bd6370b0da0ca969954e3c95da6da0ca04a845eb0b94127a32c1b053993fae",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/authorization.test.ts": {
+      "sha256": "e4ddf63559a4fe4073c11f95883f8aa418f7c51c5204161175e021d97f31ebac",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/redeemers.ts": {
+      "sha256": "bbbd418c739782d1eeabd6a083830160a3b20906da3babd1d0836f9e66e6b754",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/transactions.ts": {
+      "sha256": "7741a9dbaf89090eaffac88a4c18351c99bf73b6c159742507de775e88c4eade",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/authorization-wire.ts": {
+      "sha256": "7e2ecdc353019f9e958e44b2f8d84f946888e5bf6b4e0bb39b714424e98b4bec",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/deployed-test-tokens.ts": {
+      "sha256": "2b0f7179095fc6eff0b0c66bf3291eedff0ce4a1c3542871975faaf9fe98c78c",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/datum.ts": {
+      "sha256": "8ff5658a4bf65c4b570adfb337392a7fecbe2f0998b00e0dacf412cabbb57a5b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/pool-registry.test.ts": {
+      "sha256": "44075869a39521eb1e69531c02573645289957b662c26c223fd310f561c7a2d1",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/journal.ts": {
+      "sha256": "f811efb87f1f8689a26782d7962b02d20cd34c10bbcfd06ae74fc80925f65d7a",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/datum.test.ts": {
+      "sha256": "f2312baa1cdb1de6873b399b5aa9e6d95f2d4e66cc3ec56965c496d338bb113d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/rewards.test.ts": {
+      "sha256": "32904f4bd1912ebe9a06e603b415ae3ddaca641aa54249d1984c8a5355900464",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/shared/authorization-vectors.json": {
+      "sha256": "f7a841d3156dd97379f38919208f25aeca5e578c161054bf74d4a72e5d603d77",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/testing/single-staking-fixture.ts": {
+      "sha256": "0f718421a5f683bf52aa3486021491b329747d04466541ab978f0049038fcd06",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/testing/export-staking-evidence.ts": {
+      "sha256": "0d7d64d2e1bb2fb1506d621359816a7b24386c2109e9dd71324c7d75ca924e99",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/testing/staking.integration.test.ts": {
+      "sha256": "9ac3e0a6f910a5478b6d06cab548828baf1c2414fc9a2cce8ad155ce04499383",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/testing/vault-composition.test.ts": {
+      "sha256": "849283602774f61d10366af0646c0f1e0f5b18fb7ec185242a2e0869d838fdd0",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/builders/vault-operation.ts": {
+      "sha256": "f1207f17f6f1d0f635bd6c418de0305623c478d89953c93008ab6647a097992b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/builders/claim.ts": {
+      "sha256": "72e59ebd0e097c698e9f78d6532d0b5184bbb47b8106afb0fd731c61b3ed3b2d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/builders/position-closure.ts": {
+      "sha256": "5831453c9ec08316c04c9a74cae0327089d72eed0943c6da27acb9c9b0f7fc7d",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/builders/stake.ts": {
+      "sha256": "d64474a48a3c0b8ee8fdfea1646a3e93f5cde50d5b0b094d2ced312dd22a255b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/builders/withdraw.ts": {
+      "sha256": "074ae53451b8ce56dcf6b28b908009952418e9b360b6b95d79a51001fed32d6f",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/user/flows/position-closure.ts": {
+      "sha256": "499b5fd46c3abfd79ae02d3401c3e799b30feb1308e38007a37308aca2dd62a4",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/builders/notify-rewards.ts": {
+      "sha256": "8329116da3a5c454cb04272e501837c0f97d9a34c8a01afb6719cc67ea893e27",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/builders/pool-toggle.ts": {
+      "sha256": "f52f5a0ef2603ee43b78b657bd1632e7bc88f189fb78eb78f316a268b0c28e02",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/builders/recover-surplus.ts": {
+      "sha256": "b6cacd5917391e66d7a47280ca819bcb502a6cb4ffe60b21eecf9d31c0343a18",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/builders/fund-rewards.ts": {
+      "sha256": "c207fbf949423b2bdec2a823eaa3579b6a0c7df6d74906239a88bc9398114f07",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/setup/journal.test.ts": {
+      "sha256": "297423e7300a3c29715f8db6b02a85a7198181fe37bcbeb18735365e90d9b3fc",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/setup/pool.ts": {
+      "sha256": "7c84185f7743a30838e7bcb3f5f0702104f3d3f0882dfa7d6bf8ea5ee42b1fcb",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/setup/settings.ts": {
+      "sha256": "4eacd5148cf4a6e7180120daf7286fbb6e2437de5a6f234d1ebe343f74a25bfb",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/setup/journal.ts": {
+      "sha256": "e7f1431d492b73858d2da8819385c3e9390fc53a85317b74258bc52d25c049b4",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/transfer-rewards-to-owner.test.ts": {
+      "sha256": "87f96e6536125bb2b1f1f17ec289afbe9c25c0a29e7881bc82e5f855f54812db",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/deploy-test-tokens.ts": {
+      "sha256": "1c1c5c83f1e78d8769c080494df7a37ed5b3832959d61f26e0e3408f9bee9263",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/generate-recipient.ts": {
+      "sha256": "fc41facf0c36881fc7388c7fa5c41e4b59811e699ee24727df78ce720dd26bda",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/transfer-rewards-to-owner.ts": {
+      "sha256": "14559371e7447221dbd5e12eef16e0d172125c6a8c0d1b879e7cec8dc30860db",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/prepare-pool-bootstrap.ts": {
+      "sha256": "163879532a750937298617cef7737d5118b8c65ad89f2cfe596cfad227ae9691",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/fund-staker.ts": {
+      "sha256": "b9b22bf6d2d6e04aaa45e18ea299a8a45528cc2c8cdcffce64849edeec4ed18f",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/mint-token-c.ts": {
+      "sha256": "44987d3b5c5050a3b073ab2c1ee453b27fed852395ab3f97c30e56059b7dc2b9",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/deploy-test-tokens.test.ts": {
+      "sha256": "d1c8e56550a7a2cbbad664fea7d17b8ca3a7468005fe805db782b1e20934b2cf",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/config.ts": {
+      "sha256": "1f1e0ac6fe96a9e5b1266783c8bbacbb4c13707d6161038c89b548f8b71ba65c",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/tokens/deploy-token-c.ts": {
+      "sha256": "ecf166be7ee572d99788aeb7e56854b8d714dfa69752538f481d70b21a00934c",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/offchain/owner/flows/pool-toggle.ts": {
+      "sha256": "6ab288fb27f4102d712051bff3d90a1cac9ff2905e6c13dbe3f05341148c3867",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/validators/token.ak": {
+      "sha256": "7f69a43fa58bb75e4e8f668ce4d2390c2edb7b66c63bb29d1edced90914f770b",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/blueprint.json": {
+      "sha256": "ab0634037969b891bde01da7082cc51bb1ecbd2c31a8f21cfa0488a98d00cfcb",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/pool-initialization.unsigned.cbor": {
+      "sha256": "d298a6ea052772f98c1f9dcb0d564e42c7db502bc8885e1f495435e5c0a05fd3",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/README.md": {
+      "sha256": "1f390217a9a4cc2c70bb95d726bbd020950c76f557ba7779907d129762482b6c",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/emulator-evidence.json": {
+      "sha256": "e346f602eb990565d2c88524f930d51bde207319f67110571851db030a224426",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/reference-publication.unsigned.cbor": {
+      "sha256": "741b2c95c4ea91c2eba685aaf99df4426185e01a7bdc39b694568a952331a6e2",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    },
+    "onchain/staking/delivery/authorization-vectors.json": {
+      "sha256": "f7a841d3156dd97379f38919208f25aeca5e578c161054bf74d4a72e5d603d77",
+      "reason": "Unused by current compiler/client entrypoints; removed during dependency audit"
+    }
+  },
+  "removedOnchainSources": {
+    "packages/staking-ctvs1-vault/factory/onchain/lib/factory/deployment.ak": {
+      "sha256": "fca6a64c53307beb19b93069bd039a6bd1f52c21516be20ac1f2cac5c2141ad3",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/.authenticated_factory.ak.swp": {
+      "sha256": "6fbb194eda9f8ecff07532e8792bc9cb9fcfedaa266653d0d80aaebe1e5171b9",
+      "reason": "Noncompiler editor artifact; never included"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/factory.ak": {
+      "sha256": "59551ffb0bcc15d60d71d71df12499fcd1a5f1332562d2fa3b5c65936a0b95c2",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/factory/onchain/validators/identity_probe.ak": {
+      "sha256": "b515e5c3565f09d1a03fa342f2a278e55c4b448e436dc65c80d97e45e2a31fc6",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/protocol.ak": {
+      "sha256": "8bbab6dc94439a7826662dcfc200d30bf2222c041992a317a05bb778f04b0f46",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/rewards.ak": {
+      "sha256": "93b8339694818ca6509d1c2d6b4db424f1db70e6b62fc2a591a97e1a6c225bf0",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/rewards.test.ak": {
+      "sha256": "5bc0b8ce201f48bdc1a89626d20de35cb98917836db1647f38400879b9c6e0c5",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking/types.ak": {
+      "sha256": "5f3f1ce572fceb5ce68f516ba2fced0c42f26445051567d36359d92a6c00f7cf",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/cash_state.ak": {
+      "sha256": "0c4278a8f9103df788a659eea8b0ec94f497b9dc4b4e855b85baa203cf1e4ded",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_decode.ak": {
+      "sha256": "0d801356e0b33ebab5b07289a9fb62ed8ce0d0881714d8d2328aee9a034cec92",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_decode_test.ak": {
+      "sha256": "ceeba6d986a490862b3256746f77aad0972b43d51a84110e8603e6f0a37da2a8",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_genesis.ak": {
+      "sha256": "5ad0b2639f5f004fac9f8050c31f8d9b329e12cd2b5167b06dae4301f6c528f7",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    },
+    "packages/staking-ctvs1-vault/onchain/lib/staking_ctvs1/staking_state.ak": {
+      "sha256": "571dc8455bebb5048a96e4eff682dc2e71e3e1438b868ada5c64e33613ac9229",
+      "reason": "Unused legacy helper or identity-only prototype; absent from current controller dependency closure"
+    }
+  },
+  "retainedOnchainBytesChanged": true,
+  "currentSourceSelectionSha256": "f91c65231be429f5f25369f26672d337b1aff33940b63e0f2d85ffc33602d695",
+  "stakingSnapshotSha256": "2254e739d1ea424cad7d1b06a05a2b15f9251dbcd6b41fb3132bbd31a889b517"
+}

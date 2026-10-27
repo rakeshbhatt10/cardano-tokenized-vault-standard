@@ -29,6 +29,7 @@ export default [
       "**/coverage/**",
       "**/artifacts/**",
       "**/evidence/**",
+      "examples/staking-vault/vendor/**",
     ],
   },
   {

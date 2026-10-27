@@ -1,0 +1,1118 @@
+{
+  "seed": 3098115174,
+  "summary": {
+    "total": 87,
+    "passed": 87,
+    "failed": 0,
+    "kind": {
+      "unit": 85,
+      "property": 2
+    }
+  },
+  "modules": [
+    {
+      "name": "factory_vault_test",
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "kind": {
+          "unit": 7,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "no_consumed_state_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 63107,
+            "cpu": 20304669
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect [found] = list.filter(\n    tx.inputs,\n    fn(i) { assets.quantity_of(i.output.value, policy, wire.state_name) != 0 },\n  )"
+          ]
+        },
+        {
+          "title": "reference_only_state_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 84709,
+            "cpu": 26727112
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect [found] = list.filter(\n    tx.inputs,\n    fn(i) { assets.quantity_of(i.output.value, policy, wire.state_name) != 0 },\n  )"
+          ]
+        },
+        {
+          "title": "duplicate_state_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 127131,
+            "cpu": 40487302
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect [found] = list.filter(\n    tx.inputs,\n    fn(i) { assets.quantity_of(i.output.value, policy, wire.state_name) != 0 },\n  )"
+          ]
+        },
+        {
+          "title": "wrong_state_reference_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 148071,
+            "cpu": 49285471
+          }
+        },
+        {
+          "title": "wrong_state_address_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 127292,
+            "cpu": 42017266
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect found.output.address == from_script(policy)"
+          ]
+        },
+        {
+          "title": "wrong_state_quantity_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 127068,
+            "cpu": 40078754
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect assets.quantity_of(found.output.value, policy, wire.state_name) == 1"
+          ]
+        },
+        {
+          "title": "extra_mint_envelope_field_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 41895,
+            "cpu": 10833077
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect [magic, version, action] = fields"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mixed_staking/authorization_test",
+      "summary": {
+        "total": 22,
+        "passed": 22,
+        "failed": 0,
+        "kind": {
+          "unit": 22,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "first_deposit",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 622129,
+            "cpu": 230198576
+          }
+        },
+        {
+          "title": "topup_deposit",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 549689,
+            "cpu": 200004183
+          }
+        },
+        {
+          "title": "topup_mint",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 549889,
+            "cpu": 200036183
+          }
+        },
+        {
+          "title": "withdraw",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 553595,
+            "cpu": 202081816
+          }
+        },
+        {
+          "title": "redeem",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 553595,
+            "cpu": 202081816
+          }
+        },
+        {
+          "title": "collect_fees",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 110410,
+            "cpu": 41744978
+          }
+        },
+        {
+          "title": "topup_reserve",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 113874,
+            "cpu": 42874836
+          }
+        },
+        {
+          "title": "set_pause",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 112672,
+            "cpu": 42561497
+          }
+        },
+        {
+          "title": "legacy_three_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 21329,
+            "cpu": 6697303
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    tag == 0 && list.length(fields) == 10 || tag == 1 && list.length(fields) == 2"
+          ]
+        },
+        {
+          "title": "draft_seven_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 21273,
+            "cpu": 7387776
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    tag == 0 && list.length(fields) == 10 || tag == 1 && list.length(fields) == 2"
+          ]
+        },
+        {
+          "title": "extra_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42177,
+            "cpu": 13097632
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    tag == 0 && list.length(fields) == 10 || tag == 1 && list.length(fields) == 2"
+          ]
+        },
+        {
+          "title": "unsupported_version",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 105642,
+            "cpu": 32218382
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        version == 1 && bytearray.length(pool_id) == 28 && bytearray.length(\n          position_name,\n        ) == 32"
+          ]
+        },
+        {
+          "title": "short_pool",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 105654,
+            "cpu": 32368864
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        version == 1 && bytearray.length(pool_id) == 28 && bytearray.length(\n          position_name,\n        ) == 32"
+          ]
+        },
+        {
+          "title": "short_position",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 105665,
+            "cpu": 32443297
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        version == 1 && bytearray.length(pool_id) == 28 && bytearray.length(\n          position_name,\n        ) == 32"
+          ]
+        },
+        {
+          "title": "operation_extra_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 83905,
+            "cpu": 24235725
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect authorization: Authorization = raw"
+          ]
+        },
+        {
+          "title": "zero_amount",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 105672,
+            "cpu": 32880457
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        q(amount) && amount > 0 && index(state_output) && q(max_reward_input) && q(\n          min_reward_output,\n        )"
+          ]
+        },
+        {
+          "title": "overflow_amount",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 105670,
+            "cpu": 32759118
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        q(amount) && amount > 0 && index(state_output) && q(max_reward_input) && q(\n          min_reward_output,\n        )"
+          ]
+        },
+        {
+          "title": "invalid_option",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 83909,
+            "cpu": 24564459
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect authorization: Authorization = raw"
+          ]
+        },
+        {
+          "title": "continuation_mismatch",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 294247,
+            "cpu": 92019706
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect action <= 3 && state_output == inner_output"
+          ]
+        },
+        {
+          "title": "exit_as_entry",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 314319,
+            "cpu": 95891221
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        when operation is {\n          Stake -> action <= 1 && min_reward_output == 0\n          WithdrawAndClaim ->\n            action >= 2 && creation_ref == None && max_reward_input == 0\n        }"
+          ]
+        },
+        {
+          "title": "entry_reward_output",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 314317,
+            "cpu": 95762839
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n        when operation is {\n          Stake -> action <= 1 && min_reward_output == 0\n          WithdrawAndClaim ->\n            action >= 2 && creation_ref == None && max_reward_input == 0\n        }"
+          ]
+        },
+        {
+          "title": "maintenance_with_user_action",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 127250,
+            "cpu": 41335987
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect action >= 5"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mixed_staking/registration_test",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "kind": {
+          "unit": 6,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "supported_profile",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 74433,
+            "cpu": 23300077
+          }
+        },
+        {
+          "title": "identity_probe_is_not_admission",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 63948,
+            "cpu": 20941223
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    proof.state_name == #\"5354415445\" && proof.implementation == implementation"
+          ]
+        },
+        {
+          "title": "substituted_state_policy",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 63272,
+            "cpu": 19144242
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    proof.version == 1 && bytearray.length(proof.controller) == 28 && proof.state_policy == proof.controller"
+          ]
+        },
+        {
+          "title": "unsupported_registration_version",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42555,
+            "cpu": 14153492
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    proof.version == 1 && bytearray.length(proof.controller) == 28 && proof.state_policy == proof.controller"
+          ]
+        },
+        {
+          "title": "vault_pool_requires_factory_anchor",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 4368,
+            "cpu": 1119063
+          }
+        },
+        {
+          "title": "wallet_pool_has_no_factory_anchor",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 3867,
+            "cpu": 963014
+          }
+        }
+      ]
+    },
+    {
+      "name": "staking/rewards.test",
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "kind": {
+          "unit": 7,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "alice_earns_60_then_10_after_claim",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 210715,
+            "cpu": 77637644
+          }
+        },
+        {
+          "title": "expiry_caps_emissions",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 73263,
+            "cpu": 26389069
+          }
+        },
+        {
+          "title": "zero_stake_preserves_accumulator_and_adds_no_liability",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 71302,
+            "cpu": 25318272
+          }
+        },
+        {
+          "title": "rounding_and_pending_rewards",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 103532,
+            "cpu": 37681456
+          }
+        },
+        {
+          "title": "backwards_time_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 43161,
+            "cpu": 14697509
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect applicable >= pool.last_update_seconds"
+          ]
+        },
+        {
+          "title": "negative_stake_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 423,
+            "cpu": 868763
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect validate_pool(pool)"
+          ]
+        },
+        {
+          "title": "backwards_accumulator_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 22348,
+            "cpu": 8773002
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect and {\n      position.staked_amount >= 0,\n      position.reward_per_token_paid >= 0,\n      position.pending_rewards >= 0,\n      reward_per_token >= position.reward_per_token_paid,\n    }"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staking_ctvs1/controller_vectors_test",
+      "summary": {
+        "total": 22,
+        "passed": 22,
+        "failed": 0,
+        "kind": {
+          "unit": 22,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "first_deposit",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 562630,
+            "cpu": 216989870
+          }
+        },
+        {
+          "title": "topup_deposit",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 515025,
+            "cpu": 194441681
+          }
+        },
+        {
+          "title": "topup_mint",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 517229,
+            "cpu": 195050445
+          }
+        },
+        {
+          "title": "withdraw",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 521637,
+            "cpu": 196381529
+          }
+        },
+        {
+          "title": "redeem",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 522739,
+            "cpu": 196685911
+          }
+        },
+        {
+          "title": "collect_fees",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 100759,
+            "cpu": 40190616
+          }
+        },
+        {
+          "title": "topup_reserve",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 97169,
+            "cpu": 38890813
+          }
+        },
+        {
+          "title": "set_pause",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 97397,
+            "cpu": 39174381
+          }
+        },
+        {
+          "title": "legacy_three_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 21416,
+            "cpu": 6438698
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect  \n        [\n          version, pool, name, operation, amount, creation, state_output, base,\n          max_reward_input, min_reward_output,\n        ]\n      = fields"
+          ]
+        },
+        {
+          "title": "draft_seven_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 21480,
+            "cpu": 7056939
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect  \n        [\n          version, pool, name, operation, amount, creation, state_output, base,\n          max_reward_input, min_reward_output,\n        ]\n      = fields"
+          ]
+        },
+        {
+          "title": "extra_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42408,
+            "cpu": 12396756
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect  \n        [\n          version, pool, name, operation, amount, creation, state_output, base,\n          max_reward_input, min_reward_output,\n        ]\n      = fields"
+          ]
+        },
+        {
+          "title": "unsupported_version",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42411,
+            "cpu": 12549569
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      builtin.un_i_data(version) == 1 && bytearray.length(\n        builtin.un_b_data(pool),\n      ) == 28 && bytearray.length(builtin.un_b_data(name)) == 32"
+          ]
+        },
+        {
+          "title": "short_pool",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42455,
+            "cpu": 12720193
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      builtin.un_i_data(version) == 1 && bytearray.length(\n        builtin.un_b_data(pool),\n      ) == 28 && bytearray.length(builtin.un_b_data(name)) == 32"
+          ]
+        },
+        {
+          "title": "short_position",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42498,
+            "cpu": 12814768
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      builtin.un_i_data(version) == 1 && bytearray.length(\n        builtin.un_b_data(pool),\n      ) == 28 && bytearray.length(builtin.un_b_data(name)) == 32"
+          ]
+        },
+        {
+          "title": "operation_extra_field",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 62998,
+            "cpu": 18171495
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect ( op == 0 || op == 1 ) && list.is_empty(op_fields)"
+          ]
+        },
+        {
+          "title": "zero_amount",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42598,
+            "cpu": 13150437
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      validation.positive_q(principal) && validation.valid_index(successor) && validation.q(\n        max_reward,\n      ) && validation.q(min_reward)"
+          ]
+        },
+        {
+          "title": "overflow_amount",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42599,
+            "cpu": 13194274
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      validation.positive_q(principal) && validation.valid_index(successor) && validation.q(\n        max_reward,\n      ) && validation.q(min_reward)"
+          ]
+        },
+        {
+          "title": "invalid_option",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 63259,
+            "cpu": 19109531
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      if mode == 0 {\n        expect [raw_ref] = mode_fields\n        let Pair(ref_tag, ref_fields) = builtin.un_constr_data(raw_ref)\n        expect ref_tag == 0\n        expect [tx_id, index] = ref_fields\n        bytearray.length(builtin.un_b_data(tx_id)) == 32 && validation.valid_index(\n          builtin.un_i_data(index),\n        )\n      } else {\n        mode == 1 && list.is_empty(mode_fields)\n      }"
+          ]
+        },
+        {
+          "title": "continuation_mismatch",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 211763,
+            "cpu": 70795829
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect state_output == inner_successor"
+          ]
+        },
+        {
+          "title": "exit_as_entry",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 211769,
+            "cpu": 71172479
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      if entering {\n        op == 0 && min_reward == 0\n      } else {\n        op == 1 && mode == 1 && max_reward == 0\n      }"
+          ]
+        },
+        {
+          "title": "entry_reward_output",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 211769,
+            "cpu": 71172479
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n      if entering {\n        op == 0 && min_reward == 0\n      } else {\n        op == 1 && mode == 1 && max_reward == 0\n      }"
+          ]
+        },
+        {
+          "title": "maintenance_with_user_action",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42157,
+            "cpu": 11705252
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect kind >= 5 && kind <= 7"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staking_ctvs1/mixed_state",
+      "summary": {
+        "total": 16,
+        "passed": 16,
+        "failed": 0,
+        "kind": {
+          "unit": 14,
+          "property": 2
+        }
+      },
+      "tests": [
+        {
+          "title": "shared_topup_preserves_other_principal",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 954049,
+            "cpu": 378399258
+          }
+        },
+        {
+          "title": "shared_exit_preserves_other_principal",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 953585,
+            "cpu": 377972302
+          }
+        },
+        {
+          "title": "dedicated_total_assignment_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 471942,
+            "cpu": 185255335
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool(pool_output).total_staked == before_pool.total_staked + next_backing - old_backing"
+          ]
+        },
+        {
+          "title": "wallet_owner_cannot_impersonate_vault",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 980888,
+            "cpu": 394180625
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect and {\n      output.address == from_script(binding.pool_policy),\n      output.reference_script == None,\n      assets.quantity_of(output.value, binding.pool_policy, name) == 1,\n      value.pool_id == binding.pool_policy,\n      value.position_name == name,\n      value.schema_version == 2,\n      value.owner == expected_owner,\n      value.payout_address == expected_address,\n      validation.q(value.staked_amount),\n      validation.q(value.pending_rewards),\n      value.reward_per_token_paid >= 0,\n    }"
+          ]
+        },
+        {
+          "title": "wrong_state_identity_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 980888,
+            "cpu": 394535252
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect and {\n      output.address == from_script(binding.pool_policy),\n      output.reference_script == None,\n      assets.quantity_of(output.value, binding.pool_policy, name) == 1,\n      value.pool_id == binding.pool_policy,\n      value.position_name == name,\n      value.schema_version == 2,\n      value.owner == expected_owner,\n      value.payout_address == expected_address,\n      validation.q(value.staked_amount),\n      validation.q(value.pending_rewards),\n      value.reward_per_token_paid >= 0,\n    }"
+          ]
+        },
+        {
+          "title": "mismatched_staking_action_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 725839,
+            "cpu": 278589268
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "first_entry_requires_key_seed",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 773461,
+            "cpu": 299238111
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect ledger.key_input(creation_input)"
+          ]
+        },
+        {
+          "title": "first_entry_into_nonempty_pool",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 1067538,
+            "cpu": 423956800
+          }
+        },
+        {
+          "title": "topup_amount_mismatch_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 725867,
+            "cpu": 276495004
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "duplicate_target_position_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 618905,
+            "cpu": 227967056
+          },
+          "traces": [
+            "the validator crashed / exited prematurely"
+          ]
+        },
+        {
+          "title": "shared_authorization_wrong_pool_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 769199,
+            "cpu": 291570620
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "shared_authorization_wrong_position_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 769233,
+            "cpu": 292774232
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "shared_authorization_wrong_amount_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 789235,
+            "cpu": 297084824
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "shared_authorization_wrong_creation_mode_rejected",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 789877,
+            "cpu": 299592847
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect\n    pool_id == builtin.b_data(pid) && position_name == builtin.b_data(name) && authorized_amount == builtin.i_data(\n      amount,\n    ) && creation_ref == raw_creation && operation == raw_operation"
+          ]
+        },
+        {
+          "title": "nonzero_reward_topup_matches_pinned_checkpoint",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "iterations": 100,
+          "counterexample": null
+        },
+        {
+          "title": "nonzero_reward_exit_matches_pinned_checkpoint",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "iterations": 100,
+          "counterexample": null
+        }
+      ]
+    },
+    {
+      "name": "staking_ctvs1/staking_decode_test",
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "kind": {
+          "unit": 7,
+          "property": 0
+        }
+      },
+      "tests": [
+        {
+          "title": "synchronous_actions_keep_public_tags",
+          "status": "pass",
+          "on_failure": "fail_immediately",
+          "execution_units": {
+            "mem": 885510,
+            "cpu": 295029575
+          }
+        },
+        {
+          "title": "rejects_batch_before_decoding_its_payload",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 42171,
+            "cpu": 12806496
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect tag >= 5 && tag <= 7"
+          ]
+        },
+        {
+          "title": "rejects_wrong_purpose",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 455,
+            "cpu": 963765
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect tag == expected && list.length(fields) == size"
+          ]
+        },
+        {
+          "title": "rejects_extra_envelope_fields",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 20752,
+            "cpu": 5612552
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect tag == expected && list.length(fields) == size"
+          ]
+        },
+        {
+          "title": "rejects_zero_direct_bound",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 127186,
+            "cpu": 41439144
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect and {\n        validation.valid_destination(d.receiver),\n        validation.positive_q(d.amount),\n        validation.positive_q(d.bound),\n        validation.valid_index(d.state_output),\n        validation.valid_index(d.receiver_output),\n        d.state_output != d.receiver_output,\n      }"
+          ]
+        },
+        {
+          "title": "rejects_same_receiver_and_state_index",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 148157,
+            "cpu": 47516085
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect and {\n        validation.valid_destination(d.receiver),\n        validation.positive_q(d.amount),\n        validation.positive_q(d.bound),\n        validation.valid_index(d.state_output),\n        validation.valid_index(d.receiver_output),\n        d.state_output != d.receiver_output,\n      }"
+          ]
+        },
+        {
+          "title": "rejects_invalid_admin_index",
+          "status": "pass",
+          "on_failure": "succeed_eventually",
+          "execution_units": {
+            "mem": 63529,
+            "cpu": 20269502
+          },
+          "traces": [
+            "the validator crashed / exited prematurely",
+            "expect validation.valid_index(d.second)"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "SINGLE-STAKING-SHARED-INTERFACE-1",
+  "version": 1,
+  "status": "implemented; unsigned local lifecycle verified; independent review and node-backed acceptance pending",
+  "authorization": {
+    "constructor": 0,
+    "fields": [
+      "version",
+      "pool_id",
+      "position_name",
+      "operation",
+      "amount",
+      "creation_ref",
+      "state_output",
+      "base",
+      "max_reward_input",
+      "min_reward_output"
+    ],
+    "operations": {
+      "Stake": 0,
+      "WithdrawAndClaim": 1
+    },
+    "amountMeaning": {
+      "Stake": "net principal added",
+      "WithdrawAndClaim": "gross principal removed"
+    },
+    "version": 1,
+    "maxQuantity": "9223372036854775807",
+    "maxOutputIndex": 65535
+  },
+  "maintenance": {
+    "constructor": 1,
+    "fields": ["version", "base"],
+    "allowedBaseActionTags": [5, 6, 7]
+  },
+  "stakingActionTags": {
+    "Stake": 0,
+    "Withdraw": 1,
+    "Claim": 2,
+    "Exit": 3,
+    "CloseEmptyPosition": 4,
+    "NotifyRewards": 5,
+    "FundRewards": 6,
+    "TogglePause": 7,
+    "ToggleWithdrawLock": 8,
+    "RecoverSurplus": 9,
+    "WithdrawAndClaim": 10
+  },
+  "registration": {
+    "constructor": 0,
+    "version": 1,
+    "fields": [
+      "version",
+      "controller",
+      "state_policy",
+      "state_name",
+      "implementation",
+      "instance_hash",
+      "config_hash"
+    ],
+    "supportedImplementation": "CTVS1-MIXED-FACTORY-1",
+    "stateName": "5354415445",
+    "statePolicyEqualsController": true,
+    "formatDecodingIsAdmission": false
+  },
+  "payoutProfile": "registered-controller-direct-distribution-v1",
+  "newPoolParameters": [
+    "bootstrap_ref",
+    "manager",
+    "rewards_distributor",
+    "staking_asset",
+    "reward_asset",
+    "initially_locked",
+    "vault_supported",
+    "factory_policy: Option<PolicyId>"
+  ],
+  "poolRules": {
+    "vaultSupported": {
+      "initially_locked": false,
+      "factory_policy": "Some(explicit authentic factory policy)"
+    },
+    "walletOnly": {
+      "factory_policy": "None"
+    }
+  },
+  "admission": {
+    "stage": "first position creation",
+    "manualPerVaultApproval": false,
+    "proof": "authentic registration NFT plus matching exact Config hash and supported controller/State identity",
+    "subsequentOperations": "preserved position identity plus consumed State and exact action",
+    "registryRemovalMayBlockExit": false
+  },
+  "productionFactoryPolicy": null,
+  "poolHandlersImplemented": true,
+  "deploymentReady": false,
+  "executionEnabled": false
+}

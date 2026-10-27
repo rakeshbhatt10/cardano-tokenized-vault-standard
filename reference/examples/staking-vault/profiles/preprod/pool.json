@@ -1,0 +1,81 @@
+{
+  "schema": "FRAC-MIXED-OWNER-PREPROD-DEPLOYMENT-1",
+  "verifiedAt": "2026-10-27T08:48:10.955Z",
+  "network": "Preprod",
+  "networkMagic": 1,
+  "factoryPolicy": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc43370",
+  "factoryBuildId": "3df02869565300878e93bcf267e1ed09367388a0e094ff2268e8d58c2b36e4fa",
+  "factoryReference": {
+    "txId": "e1892706c527ad510a32a1764221db61c875166ef85350bda400294ad830a14b",
+    "index": "0"
+  },
+  "managerAddress": "addr_test1qzx2wkt926dmrrver2878sp4jjzz055umccckdkhgwunhjxz3veecmqv0k658p9tnnn57rlc2yhjzadc4a8jamqhl09sr4krd5",
+  "poolPolicyId": "02f13369acbfc717f811413691d54df7aabc43ce3d8355265b298c36",
+  "poolAddress": "addr_test1wqp0zvmf4jluw9lcz9qndyw4fhm640zrec7cx4fxtv5ccdspqvmwj",
+  "validatorParameters": {
+    "bootstrapRef": {
+      "txHash": "0fe821595f19e4d2abe239074c2de642df5c862afa7de20c0e35daf6e4bc4b4b",
+      "outputIndex": "2"
+    },
+    "manager": "8ca75965569bb18d991a8fe3c035948427d29cde318b36d743b93bc8",
+    "rewardsDistributor": "8ca75965569bb18d991a8fe3c035948427d29cde318b36d743b93bc8",
+    "stakingAsset": {
+      "policyId": "fdab00e21b190b1be225cee5c7aefd0a505975ece08d1972ce31769e",
+      "tokenNameHex": "4d697865645072696e636970616c"
+    },
+    "rewardAsset": {
+      "policyId": "d0f8a2f1830941b14d32facbfbfe58782706be7409be3aed1cee7d40",
+      "tokenNameHex": "4d69786564526577617264"
+    },
+    "initiallyLocked": false,
+    "vaultSupported": true,
+    "factoryPolicy": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc43370"
+  },
+  "protocolVersion": "factory-v1",
+  "positionSchemaVersion": 2,
+  "supportedOwnerModes": ["wallet", "vault"],
+  "withdrawalLockPolicy": "permanently-unlocked",
+  "tokenMintTx": "0fe821595f19e4d2abe239074c2de642df5c862afa7de20c0e35daf6e4bc4b4b",
+  "referenceScriptRef": {
+    "txHash": "06dfa039f5d3a4ab027ca3e31ea848d95bdd3b6e5b859245ea50c7abd92ae7e9",
+    "outputIndex": 0
+  },
+  "initializationTx": "6ac68a507ceadd3f58694d4250fc4d7192faeb67935610135971dbf548453cab",
+  "rewardNotificationTx": "dcb322cd283f577883251e7ab994513dc4fda1e33bb9c1d0c657a785376e2e1f",
+  "rewardBudget": "70000000",
+  "rewardDurationSeconds": "604800",
+  "currentPoolUtxo": {
+    "txHash": "dcb322cd283f577883251e7ab994513dc4fda1e33bb9c1d0c657a785376e2e1f",
+    "outputIndex": 0,
+    "assets": {
+      "lovelace": "1409370",
+      "02f13369acbfc717f811413691d54df7aabc43ce3d8355265b298c36504f4f4c": "1",
+      "d0f8a2f1830941b14d32facbfbfe58782706be7409be3aed1cee7d404d69786564526577617264": "70000000"
+    },
+    "address": "addr_test1wqp0zvmf4jluw9lcz9qndyw4fhm640zrec7cx4fxtv5ccdspqvmwj",
+    "datum": "d8799fd8799f001a00093a801a6ae99fa618731a6ae065260000d87980d87980ffff"
+  },
+  "confirmationTip": {
+    "time": 1793090881,
+    "height": 5340814,
+    "hash": "b1240fc90e65041fc3b19fb154b11f569428ddb22bab1812b80fc8d649407eff",
+    "slot": 137407681,
+    "epoch": 321,
+    "epoch_slot": 377281,
+    "slot_leader": "pool1945cfqzmy2qe2z59mfdwm7jwqtucncfee5xkd8f4wu97zr8xuys",
+    "size": 3152,
+    "tx_count": 3,
+    "output": "40232441005",
+    "fees": "1730705",
+    "block_vrf": "vrf_vk16a22e999dkx2vqcf54ky95u2d6u3qfgtwuw0cqukg3ry6lp28pxqlqqlq6",
+    "op_cert": "b915648caaa107c68f57fe9eb7a67fe9f6b995da23b15f24ac8107d7b8b6b112",
+    "op_cert_counter": "1",
+    "previous_block": "47c6337260bf81abc216e5a70e0d434df6e2593542bf4c0c853295261d931e86",
+    "next_block": null,
+    "confirmations": 0
+  },
+  "vaultCreated": false,
+  "fullVaultLifecycleTested": false,
+  "independentReview": "pending",
+  "productionReady": false
+}

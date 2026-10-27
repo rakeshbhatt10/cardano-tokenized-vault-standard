@@ -1,0 +1,175 @@
+{
+  "schema": "STAKING-CTVS1-FACTORY-VAULT-DEPLOYMENT-1",
+  "network": "Preprod",
+  "networkMagic": 1,
+  "verifiedAt": "2026-10-27T10:40:03.701Z",
+  "controller": "8a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657",
+  "vaultAddress": "addr_test1wz9pcsykk6dqja6qu9j8jdy0ktt5sc5jt46q6nwngdggv4ca4jhtu",
+  "factoryPolicy": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc43370",
+  "poolPolicy": "02f13369acbfc717f811413691d54df7aabc43ce3d8355265b298c36",
+  "buildId": "3df02869565300878e93bcf267e1ed09367388a0e094ff2268e8d58c2b36e4fa",
+  "controllerReference": {
+    "txId": "c86b3f1980e64f888360bc7ae244b937578fa8cc6f247942e93f2f2bef555f78",
+    "index": "0"
+  },
+  "genesisTx": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+  "configRef": {
+    "txId": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+    "index": "0"
+  },
+  "stateRef": {
+    "txId": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+    "index": "1"
+  },
+  "certificateRef": {
+    "txId": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+    "index": "2"
+  },
+  "outputs": [
+    {
+      "index": 0,
+      "unit": "8a1c4096b69a097740e16479348fb2d74862925d740d4dd3435086574944",
+      "address": "addr_test1wq3vnggra5ljl2tunqkhd4hz4agvt422cvrfswcedj8um2cwsu3l3",
+      "lovelace": "4068720",
+      "datum": "d8799fd87c9f444354565302581c8a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657d8799f58209e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa8200ff582068a1d5161a8107a1091a29aa088accd79f5dd9b9f2aad94dfddfe7b1ef0dcdc6d8799f005820c1cb06289f11514738f9ecbb19e66d02fc58ee8ae78e364830cbddba8fa79780d87a9f581cfdab00e21b190b1be225cee5c7aefd0a505975ece08d1972ce31769e4e4d697865645072696e636970616cff1a000f4240d87a800000d8799fd8799fd8799f581c8ca75965569bb18d991a8fe3c035948427d29cde318b36d743b93bc8ffd8799fd8799fd8799f581cc28b339c6c0c7db54384ab9ce74f0ff8512f2175b8af4f2eec17fbcbffffffffd87a80ffd8799f581c8ca75965569bb18d991a8fe3c035948427d29cde318b36d743b93bc8ffd879800301d87a80ff1a003e1570ffd8799f581c02f13369acbfc717f811413691d54df7aabc43ce3d8355265b298c36d8799f58209e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa8201ffd87a9f581cd0f8a2f1830941b14d32facbfbfe58782706be7409be3aed1cee7d404b4d69786564526577617264ffffff"
+    },
+    {
+      "index": 1,
+      "unit": "8a1c4096b69a097740e16479348fb2d74862925d740d4dd3435086575354415445",
+      "address": "addr_test1wz9pcsykk6dqja6qu9j8jdy0ktt5sc5jt46q6nwngdggv4ca4jhtu",
+      "lovelace": "2422300",
+      "datum": "d8799f444354565302581c8a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657582068a1d5161a8107a1091a29aa088accd79f5dd9b9f2aad94dfddfe7b1ef0dcdc6000000001a0024f61c00ff"
+    },
+    {
+      "index": 2,
+      "unit": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc433708a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657",
+      "address": "addr_test1wq3vnggra5ljl2tunqkhd4hz4agvt422cvrfswcedj8um2cwsu3l3",
+      "lovelace": "2857610",
+      "datum": "d8799f01581c8a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657581c8a1c4096b69a097740e16479348fb2d74862925d740d4dd3435086574553544154455543545653312d4d495845442d464143544f52592d315820b7d191759c0e5dfbc6995a0b9e3957510f800c75c30e4ecf9f8fd4362daafe5158208c07ee78a7eebd24fcd60fa12ea255e8cf9359a213221024928c64c04c26feeeff"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "controller",
+      "txId": "c86b3f1980e64f888360bc7ae244b937578fa8cc6f247942e93f2f2bef555f78",
+      "confirmed": true,
+      "transaction": {
+        "hash": "c86b3f1980e64f888360bc7ae244b937578fa8cc6f247942e93f2f2bef555f78",
+        "block": "c8f8caef77228aeb018e752c6d3553bcc00964f33347c2c7ce353409cee97ab6",
+        "block_height": 5341083,
+        "block_time": 1793097199,
+        "slot": 137413999,
+        "index": 3,
+        "output_amount": [
+          {
+            "unit": "lovelace",
+            "quantity": "9905640698"
+          }
+        ],
+        "fees": "872537",
+        "deposit": "0",
+        "size": 16294,
+        "invalid_before": null,
+        "invalid_hereafter": null,
+        "utxo_count": 3,
+        "withdrawal_count": 0,
+        "mir_cert_count": 0,
+        "delegation_count": 0,
+        "stake_cert_count": 0,
+        "pool_update_count": 0,
+        "pool_retire_count": 0,
+        "asset_mint_or_burn_count": 0,
+        "redeemer_count": 0,
+        "valid_contract": true,
+        "treasury_donation": "0"
+      }
+    },
+    {
+      "stage": "genesis",
+      "txId": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+      "confirmed": true,
+      "transaction": {
+        "hash": "66c3ef20deb231ddbec675fc6eb932d639d4e91c02ade1e79cc8fe8772c19f1c",
+        "block": "485df8dc4a479d32c23c254ed3c75aaad90ff0c85e3c50402ca280ef1711463c",
+        "block_height": 5341093,
+        "block_time": 1793097512,
+        "slot": 137414312,
+        "index": 2,
+        "output_amount": [
+          {
+            "unit": "lovelace",
+            "quantity": "9839021927"
+          },
+          {
+            "unit": "8a1c4096b69a097740e16479348fb2d74862925d740d4dd3435086574944",
+            "quantity": "1"
+          },
+          {
+            "unit": "8a1c4096b69a097740e16479348fb2d74862925d740d4dd3435086575354415445",
+            "quantity": "1"
+          },
+          {
+            "unit": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc433708a1c4096b69a097740e16479348fb2d74862925d740d4dd343508657",
+            "quantity": "1"
+          }
+        ],
+        "fees": "684711",
+        "deposit": "0",
+        "size": 1869,
+        "invalid_before": null,
+        "invalid_hereafter": null,
+        "utxo_count": 6,
+        "withdrawal_count": 0,
+        "mir_cert_count": 0,
+        "delegation_count": 0,
+        "stake_cert_count": 0,
+        "pool_update_count": 0,
+        "pool_retire_count": 0,
+        "asset_mint_or_burn_count": 3,
+        "redeemer_count": 2,
+        "valid_contract": true,
+        "treasury_donation": "0"
+      }
+    }
+  ],
+  "totalFeeLovelace": "1557248",
+  "reserves": {
+    "config": "4068720",
+    "state": "2422300",
+    "certificate": "2857610",
+    "controllerReference": "70934060"
+  },
+  "vaultCreated": true,
+  "registrationIssued": true,
+  "genesisReadbackVerified": true,
+  "backingAssets": "0",
+  "economicSupply": "0",
+  "fullStakingLifecycleDemonstrated": false,
+  "stakingIntegrated": false,
+  "deploymentReady": false,
+  "executionEnabled": false,
+  "creationFeeLovelace": "1557248",
+  "seedProvisionFeeLovelace": "174213",
+  "totalDeploymentFeeLovelace": "1731461",
+  "seedProvisionTx": "9e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa82",
+  "genesisSeed": {
+    "txId": "9e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa82",
+    "index": "0"
+  },
+  "positionSeed": {
+    "txId": "9e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa82",
+    "index": "1"
+  },
+  "collateralRef": {
+    "txId": "9e7a19b166e2b7849d052ffeabaf85782ddac82ff7da4687023420ddb340fa82",
+    "index": "2"
+  },
+  "phaseDocuments": [
+    "phases/00-preflight.md",
+    "phases/01-seeds.md",
+    "phases/02-controller.md",
+    "phases/03-genesis.md",
+    "phases/04-readback.md"
+  ],
+  "previousVaultController": "dc74b075dbcc88863857edd860081faf45c43230d3bca74cd8d84246"
+}

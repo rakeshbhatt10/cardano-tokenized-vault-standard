@@ -1,0 +1,69 @@
+{
+  "schema": "STAKING-CTVS1-FACTORY-PREPROD-DEPLOYMENT-1",
+  "network": "Preprod",
+  "networkMagic": 1,
+  "verifiedAt": "2026-10-27T07:50:47.235Z",
+  "factoryPolicy": "9ca7570e34603c08370ac69d204ebdf9651d4b6bdd193918adc43370",
+  "buildId": "3df02869565300878e93bcf267e1ed09367388a0e094ff2268e8d58c2b36e4fa",
+  "fundingAddress": "addr_test1qzx2wkt926dmrrver2878sp4jjzz055umccckdkhgwunhjxz3veecmqv0k658p9tnnn57rlc2yhjzadc4a8jamqhl09sr4krd5",
+  "status": "confirmed-reference-publication",
+  "stages": [
+    {
+      "stage": "factory",
+      "txId": "e1892706c527ad510a32a1764221db61c875166ef85350bda400294ad830a14b",
+      "reference": {
+        "txId": "e1892706c527ad510a32a1764221db61c875166ef85350bda400294ad830a14b",
+        "index": "0"
+      },
+      "block": "3b258e96956a95380a7826b4833f01b52fb6990490c144b74c63429fccc12434",
+      "blockHeight": 5340651,
+      "blockTime": 1793087088,
+      "reserveLovelace": "100000000",
+      "feeLovelace": "315497",
+      "unsignedBytes": 3529,
+      "signedBytes": 3635,
+      "explorer": "https://preprod.cardanoscan.io/transaction/e1892706c527ad510a32a1764221db61c875166ef85350bda400294ad830a14b"
+    },
+    {
+      "stage": "prefix0",
+      "txId": "a6af01e221cdfaba76c22cea61ee49f9211613c38ba9601ba5b5cd1c90202a39",
+      "reference": {
+        "txId": "a6af01e221cdfaba76c22cea61ee49f9211613c38ba9601ba5b5cd1c90202a39",
+        "index": "0"
+      },
+      "block": "b6707c6350a46ad53f491ce19d3b03261a44834b945c14ed9dde48d35635aedd",
+      "blockHeight": 5340663,
+      "blockTime": 1793087222,
+      "reserveLovelace": "100000000",
+      "feeLovelace": "532417",
+      "unsignedBytes": 8459,
+      "signedBytes": 8565,
+      "explorer": "https://preprod.cardanoscan.io/transaction/a6af01e221cdfaba76c22cea61ee49f9211613c38ba9601ba5b5cd1c90202a39"
+    },
+    {
+      "stage": "prefix1",
+      "txId": "29019876572d25dafdeb465d0ea438661a3ef9b471d1813300b3b7f4cbd6c319",
+      "reference": {
+        "txId": "29019876572d25dafdeb465d0ea438661a3ef9b471d1813300b3b7f4cbd6c319",
+        "index": "0"
+      },
+      "block": "320a78959aa3582a4ef817814e9e8ca3c1f7cd2853908f3e98156c71d9c90052",
+      "blockHeight": 5340667,
+      "blockTime": 1793087380,
+      "reserveLovelace": "100000000",
+      "feeLovelace": "532417",
+      "unsignedBytes": 8459,
+      "signedBytes": 8565,
+      "explorer": "https://preprod.cardanoscan.io/transaction/29019876572d25dafdeb465d0ea438661a3ef9b471d1813300b3b7f4cbd6c319"
+    }
+  ],
+  "totalFeeLovelace": "1380331",
+  "totalReferenceReservesLovelace": "300000000",
+  "publicationVerified": true,
+  "registrationIssued": false,
+  "poolCreated": false,
+  "vaultCreated": false,
+  "stakingIntegrated": false,
+  "deploymentReady": false,
+  "executionEnabled": false
+}

@@ -10,7 +10,8 @@
     "packages/*",
     "services/*",
     "implementations/*/client",
-    "testing"
+    "testing",
+    "examples/staking-vault"
   ],
   "scripts": {
     "build": "node --import tsx tools/build.ts",
@@ -35,7 +36,11 @@
     "start:indexer": "npm run start --workspace @ctvs/indexer",
     "test:indexer": "vitest run --project unit services/indexer/test --reporter=default",
     "test:indexer:node": "npm run build && vitest run --project node --reporter=default",
-    "check": "npm run check:typescript && npm run format:onchain:check && npm run test:coverage && npm run test:onchain && npm run test:price-example && npm run test:integration"
+    "check": "npm run check:typescript && npm run format:onchain:check && npm run test:coverage && npm run test:onchain && npm run test:price-example && npm run test:staking-example && npm run test:integration",
+    "test:staking-example": "npm run typecheck --workspace @ctvs/staking-vault-example && npm run test --workspace @ctvs/staking-vault-example",
+    "example:staking": "npm run demo --workspace @ctvs/staking-vault-example -- ../../artifacts/staking-vault/local",
+    "inspect:staking": "npm run inspect --workspace @ctvs/staking-vault-example",
+    "test:staking-contracts": "npm run contracts --workspace @ctvs/staking-vault-example"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",

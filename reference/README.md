@@ -20,7 +20,8 @@ npm ci --ignore-scripts
 npm run check
 ```
 
-Set `AIKEN=/absolute/path/to/aiken` if necessary. The complete check runs strict typechecking, Biome formatting/lint/import checks, Aiken formatting, Vitest unit/property tests with V8 coverage, both compiled Aiken suites, the isolated Price provider suite and signed ledger integration tests. A [GitHub Actions workflow](../.github/workflows/reference.yml) runs the same gate and retains reports. Its configuration is checked in; no remote run is claimed by a local check.
+Set `AIKEN=/absolute/path/to/aiken` if necessary. The complete check runs strict typechecking, Biome formatting/lint/import checks, Aiken formatting, Vitest unit/property tests with V8 coverage, both compiled Aiken suites, the isolated Price provider suite, the [staking vault example](examples/staking-vault/README.md)
+and signed ledger integration tests. A [GitHub Actions workflow](../.github/workflows/reference.yml) runs the same gate and retains reports. Its configuration is checked in; no remote run is claimed by a local check.
 
 ## TypeScript formatting and linting
 
@@ -55,6 +56,8 @@ npm run build:ctvs1
 npm run build:ctvs2
 npm run test:onchain         # Both families, reproducible property seeds
 npm run test:price-example   # Isolated evidence provider and consumer handler tests
+npm run test:staking-example # Factory-admitted staking, complete unsigned local transactions
+npm run example:staking     # Write staking lifecycle CBOR and evaluation evidence
 npm run test:integration     # Uses the previously built artifacts
 ```
 
